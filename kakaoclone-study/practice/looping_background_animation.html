@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>looping_background_animation</title>
+    <style>
+    .cloud {
+    width: 248px;
+    height: 131px;
+    position: absolute;
+    background: transparent url(../images/cloud.png) 0 0 no-repeat;
+    }
+    .cloud01 {
+    top: 100px; left: 300px; z-index: 100;
+    }
+    .cloud02 {
+    top: 240px; z-index: 200;
+    }
+
+    @keyframes drift {
+    from {transform: translateX(-255px);} to {transform: translateX(1350px);}
+    }
+  </style>
+  </head>
+  <body>
+    <div class="cloud"></div>
+    <div class="cloud01"></div>
+    <div class="cloud02"></div>
+  </body>
+</html>
